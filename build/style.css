@@ -1,0 +1,29 @@
+.item {
+  border: solid 2px plum;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+
+.line {
+  display: flex;
+}
+
+.invalid-item {
+  visibility: hidden;
+}
+
+.piece {
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  height: 100%;
+}
+
+@keyframes shinning {
+  0% {border-color: plum;}
+  50% {border-color: rgb(255, 104, 45);}
+  100% {border-color: plum;}
+}
+.active-item {
+  animation: 1s shinning infinite;
+}
