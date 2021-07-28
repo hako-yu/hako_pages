@@ -42,6 +42,7 @@ function initMap() {
                             state.activeItemXY = null;
                         }
                         else {
+                            clearActiveItem();
                             itemDom.classList.add('active-item');
                             state.activeItemXY = { x: x, y: y };
                         }
